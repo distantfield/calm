@@ -19,14 +19,14 @@
  */
 // Please note: This is probably unwise(tm)
 function runAllTests() {
-    for (var functionName in this) {
-      if (typeof this[functionName] === 'function' && functionName.startsWith('test')) {
-        try {
-          Logger.log('Running: ' + functionName);
-          this[functionName]();
-        } catch (error) {
-          Logger.log('Error running ' + functionName + ': ' + error.message);
-        }
+  for (var functionName in this) {
+    if (typeof this[functionName] === 'function' && functionName.startsWith('test')) {
+      try {
+        Logger.log('Running: ' + functionName);
+        this[functionName]();
+      } catch (error) {
+        Logger.log('Error running ' + functionName + ': ' + error.message);
       }
     }
   }
+}
