@@ -4,7 +4,7 @@
  * Description: Helper functions for Google Apps Script. 
  *  
  * Usage: Call via script ID as a library.
- * Public Script ID: 17WCkvH825JbA9lmPrcA_p-lFtosU2Hl7wIoNRWeoZQlbvgwSCH8uPJc4
+ * Public Script ID: 1fpRT-3azh7Dd-cX-XATuS0Puv2RVi4-AuIbN2mgtTlEboi49zgmT9_P-
  * 
  * For background and further details please see https://distantfield.space/observatory/remain-calm
  * 

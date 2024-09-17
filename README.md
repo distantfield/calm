@@ -26,16 +26,16 @@ Once deployed, you can either copy and paste each of the files in Utils/ to your
 
 If you are in a hurry, or in a position where you cannot host your own version of Calm, in the Library section of your project add the following Script ID: 
 
-`17WCkvH825JbA9lmPrcA_p-lFtosU2Hl7wIoNRWeoZQlbvgwSCH8uPJc4`
+`1fpRT-3azh7Dd-cX-XATuS0Puv2RVi4-AuIbN2mgtTlEboi49zgmT9_P-`
 
 
 # License 
 Copyright 2024 Distant Field Labs
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
 
-You may obtain a copy of the License at
+You may obtain a copy of the License at:
 
-    http://www.apache.org/licenses/LICENSE-2.0
+http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
