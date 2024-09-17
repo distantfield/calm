@@ -19,18 +19,30 @@
  */
 
 function testPrettyPrintJSON() {
-    const jsonInput = '{"key1": "value1", "key2": "value2"}';
-    var testOutput = prettyPrintJSON(jsonInput);
-    logWithFunctionName(testOutput);
+    const jsonStringInput = '{"key1": "value1", "key2": "value2"}';
+    var testOutputString = prettyPrintJSON(jsonStringInput);
+    logWithFunctionName(testOutputString);
+
+    const jsonObjectInput = { key1: "value1", key2: "value2" };
+    var testOutputObject = prettyPrintJSON(jsonObjectInput);
+    logWithFunctionName(testOutputObject);
 }
 
 function testIsJson() {
-    const validJson = '{"key1": "value1", "key2": "value2"}';
-    var validOutput = isJson(validJson);
-    logWithFunctionName(validOutput);
+    const validJsonString = '{"key1": "value1", "key2": "value2"}';
+    var validOutputString = isJson(validJsonString);
+    logWithFunctionName(validOutputString);
 
-    const invalidJson = "This town don't feel mine. I''m fast to get away. Far. I dressed you in her clothes. Now drive me far away. It feels good to know you''re mine. Now drive me far away. I don''t care where, just far away.";
+    const invalidJsonString = "This town don't feel mine. I''m fast to get away. Far. I dressed you in her clothes. Now drive me far away. It feels good to know you''re mine. Now drive me far away. I don''t care where, just far away.";
+    var invalidOutputString = isJson(invalidJsonString);
+    logWithFunctionName(invalidOutputString);
 
-    var invalidOutput = isJson(invalidJson);
-    logWithFunctionName(invalidOutput);
+    const validJsonObject = { key1: "value1", key2: "value2" };
+    var validOutputObject = isJson(validJsonObject);
+    logWithFunctionName(validOutputObject);
+
+    const invalidJsonObject = {};
+    invalidJsonObject.circularRef = invalidJsonObject;
+    var invalidOutputObject = isJson(invalidJsonObject);
+    logWithFunctionName(invalidOutputObject);
 }

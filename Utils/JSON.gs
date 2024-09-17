@@ -46,27 +46,37 @@ function prettyPrintJSON(jsonInput) {
 }
 
 /**
- * Determines whether a given string is valid JSON.
+ * Determines whether a given input is valid JSON.
  *
- * @param {string} jsonString - The string to test for JSON validity.
- * @returns {boolean} - Returns true if the string is valid JSON; otherwise, false.
+ * @param {string|object} input - The input to test for JSON validity.
+ * @returns {boolean} - Returns true if the input is valid JSON; otherwise, false.
  *
  * @example
- * const validJson = '{"key1": "value1", "key2": "value2"}';
- * Logger.log(isJson(validJson)); // Output: true
+ * const validJsonString = '{"key1": "value1", "key2": "value2"}';
+ * Logger.log(isJson(validJsonString)); // Output: true
+ *
+ * const validJsonObject = { key1: "value1", key2: "value2" };
+ * Logger.log(isJson(validJsonObject)); // Output: true
  *
  * const invalidJson = 'This town don't feel mine. I''m fast to get away.';
  * Logger.log(isJson(invalidJson)); // Output: false
  */
-function isJson(jsonString) {
-  if (typeof jsonString !== 'string') {
-    return false;
+function isJson(input) {
+  if (typeof input === 'string') {
+    try {
+      JSON.parse(input);
+      return true;
+    } catch (error) {
+      return false;
+    }
+  } else if (typeof input === 'object' && input !== null) {
+    try {
+      JSON.stringify(input);
+      return true;
+    } catch (error) {
+      return false;
+    }
   }
 
-  try {
-    JSON.parse(jsonString);
-    return true;
-  } catch (error) {
-    return false;
-  }
+  return false;
 }
