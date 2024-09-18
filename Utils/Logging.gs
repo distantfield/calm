@@ -25,7 +25,7 @@
  * @param {string} message - The message to log.
  *
  * @example
- * function exampleFunction() {
+ * function testLogWithFunctionName() {
  *   logWithFunctionName('Don't ask me what you know is true.');
  * }
  * // Output:
