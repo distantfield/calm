@@ -20,7 +20,7 @@
 
 
 /**
- * Appends a row of data to a specified sheet by its name.
+ * Appends a row of data to a specified sheet by column names.
  *
  * @param {GoogleAppsScript.Spreadsheet.Spreadsheet} gSheet - The Google Sheets spreadsheet object.
  * @param {String} targetSheetName - The name of the target sheet to append the row to.
@@ -36,8 +36,6 @@
  *  'Email': 'john.doe@dfl'
  * };
  * 
- * const ss = SpreadsheetApp.create('Remain Calm');
- * const sheet = ss.insertSheet('Humans');
  * sheet.appendRow(['Name', 'Age', 'Email']);
  * 
  */
