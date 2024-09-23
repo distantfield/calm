@@ -29,7 +29,7 @@ function testSheetAppendRowByName() {
 
     const mockSpreadsheet = SpreadsheetApp.create('Calm Testing Spreadsheet');
     const sheet = mockSpreadsheet.insertSheet(targetSheetName);
-    sheet.appendRow(['Name', 'Age', 'Email']); 
+    sheet.appendRow(['Name', 'Age', 'Email']);
 
     sheetAppendRowByName(mockSpreadsheet, targetSheetName, rowData);
 

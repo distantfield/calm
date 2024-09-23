@@ -51,3 +51,18 @@ function sheetAppendRowByName(gSheet, targetSheetName, rowData) {
 
     sheet.appendRow(rowArray);
 }
+
+/**
+ * Retrieves the value of a specified cell from a given sheet in the active spreadsheet.
+ *
+ * @param {String} sheetName - The name of the sheet from which to retrieve the cell value.
+ * @param {String} cell - The cell to check.
+ * 
+ * @returns {String} The value of the specified cell.
+ */
+function sheetGetCellValue(sheetName, cell) {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(sheetName);
+    return sheet.getRange(cell).getValue();
+}
+
+
