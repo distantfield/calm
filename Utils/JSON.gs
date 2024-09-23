@@ -20,15 +20,15 @@
 
 
 /**
- * Pretty-prints a JSON string with 2-space indentation.
+ * Pretty-prints JSON.
  *
  * @param {string|object} input - The JSON to format.
  * @returns {string} - A formatted JSON string.
  * @throws {Error} - Throws an error if the input is not valid JSON.
  *
  * @example
- * const jsonStr = '{"key1": "value1", "key2": "value2"}';
- * const prettyJson = prettyPrintJSON(jsonStr);
+ * const json = '{"key1": "value1", "key2": "value2"}';
+ * const prettyJson = prettyPrintJSON(json);
  * Logger.log(prettyJson);
  * // Output:
  * // {

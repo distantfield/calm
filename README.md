@@ -1,8 +1,6 @@
-
-
 # Calm
 
-**Calm** is a collection of functions we wrote to make developing on Google AppScript an ever so slightly more calming experience. 
+**Calm** is a collection of functions we wrote to make developing on Google AppScript an ever so slƒightly more calming experience. 
 
 This repository provides reusable functions for simple tasks such as JSON, text and URL handling. 
 
@@ -11,7 +9,7 @@ This repository provides reusable functions for simple tasks such as JSON, text 
 
 Calm may be used in two ways: 
 
-* Self-hosted in your account.
+* Self-hosted in your account (Recommended).
 * As a hosted library via Distant Field Labs. 
 
 ## Self-Hosted Instances 
@@ -27,6 +25,30 @@ Once deployed, you can either copy and paste each of the files in Utils/ to your
 If you are in a hurry, or in a position where you cannot host your own version of Calm, in the Library section of your project add the following Script ID: 
 
 `1fpRT-3azh7Dd-cX-XATuS0Puv2RVi4-AuIbN2mgtTlEboi49zgmT9_P-`
+
+
+
+# Functions List
+
+| Name        | Description                           |
+|-------------|---------------------------------------|
+| `createHyperlink()` | Creates an HTML hyperlink with the given text as both the URL and the link text.|
+| `escapeHtml()` | Escapes special characters in a string for use in HTML.|
+| `prettyPrintJSON()` |Pretty-prints JSON. |
+| `isJson()` | Determines whether a given input is valid JSON|
+| `logWithFunctionName()`  | Logs a message with a timestamp, function name, and line number. |
+| `logInChunks()`  | Logs the content in chunks. |
+| `sheetAppendRowByName()` | Appends a row of data to a specified sheet by column names. |
+| `sheetGetCellValue()`  | Retrieves the value of a specified cell from a given sheet in the active spreadsheet. |
+| `truncateString()`  | Truncates a string to a specified maximum length. |
+| `getFirstLine()`  | Extracts the first line from a given text string. |
+| `ignoreFirstLine()`  | Returns the text without the first line. |
+| `stripMarkdown()`  | Strips markdown formatting from a string, returning plain text. |
+| `formatCardText()`  | Formats text for use in cardv2. |
+| `extractUrl()`  | Extracts the first URL from a given message string. |
+| `hasUrl()`  | Determines whether a given string contains a URL. |
+| `isUrlExtension()`  | Determines whether a given URL ends with the specified extension. |
+| `isSpecificHostname()`  | Determines whether a given URL matches a specific hostname. |
 
 
 # License 
