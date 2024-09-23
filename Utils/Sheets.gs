@@ -31,8 +31,8 @@
  * @example
  * 
  * const rowData = {
- *    'Name': 'John Doe',
- *   'Age': 42,
+ *  'Name': 'John Doe',
+ *  'Age': 42,
  *  'Email': 'john.doe@dfl'
  * };
  * 
