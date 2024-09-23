@@ -27,6 +27,19 @@
  * @param {Object} rowData - An object containing the data to append, where keys are column headers.
  * 
  * @throws {Error} If the target sheet is not found.
+ * 
+ * @example
+ * 
+ * const rowData = {
+ *    'Name': 'John Doe',
+ *   'Age': 42,
+ *  'Email': 'john.doe@dfl'
+ * };
+ * 
+ * const ss = SpreadsheetApp.create('Remain Calm');
+ * const sheet = ss.insertSheet('Humans');
+ * sheet.appendRow(['Name', 'Age', 'Email']);
+ * 
  */
 function sheetAppendRowByName(gSheet, targetSheetName, rowData) {
     var sheet = gSheet.getSheetByName(targetSheetName);
