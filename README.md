@@ -43,6 +43,7 @@ If you are in a hurry, or in a position where you cannot host your own version o
 | `truncateString()`  | Truncates a string to a specified maximum length. |
 | `getFirstLine()`  | Extracts the first line from a given text string. |
 | `ignoreFirstLine()`  | Returns the text without the first line. |
+| `markdownToHtml()` | Converts a markdown formatted string to HTML |
 | `stripMarkdown()`  | Strips markdown formatting from a string, returning plain text. |
 | `formatCardText()`  | Formats text for use in cardv2. |
 | `extractUrl()`  | Extracts the first URL from a given message string. |

@@ -160,6 +160,28 @@ function stripMarkdown(markdownText) {
 }
 
 /**
+ * Converts a markdown formatted string to HTML.
+ *
+ * This function supports the following markdown elements:
+ * - Headers (h1, h2, h3, h4)
+ * - Bold text
+ * - Italic text
+ *
+ * @param {string} text - The markdown formatted string to convert.
+ * @returns {string} The HTML formatted string.
+ */
+function markdownToHtml(text) {
+    text = text.replace(/^# (.*?)$/gm, "<h1>$1</h1>");
+    text = text.replace(/^## (.*?)$/gm, "<h2>$1</h2>");
+    text = text.replace(/^### (.*?)$/gm, "<h3>$1</h3>");
+    text = text.replace(/^#### (.*?)$/gm, "<h4>$1</h4>");
+    text = text.replace(/\*\*(.*?)\*\*/g, "<b>$1</b>");
+    text = text.replace(/\*(.*?)\*/g, "<i>$1</i>");
+
+    return text;
+}
+
+/**
  * Formats text for use in cardv2 by converting bullet points marked with '*' or '-' to '•' 
  * and properly indenting sub-points.
  *
@@ -177,14 +199,14 @@ function stripMarkdown(markdownText) {
  */
 function formatCardText(plainText) {
     if (typeof plainText !== 'string') {
-      throw new TypeError('The "plainText" parameter must be a string.');
+        throw new TypeError('The "plainText" parameter must be a string.');
     }
-  
+
     let formattedText = plainText
-      .replace(/^\s*[\*\-]\s+/gm, '• ') // Replace '*' or '-' at the start of lines with '• '
-      .replace(/^\s{2,}•\s+/gm, '    • '); // Indent sub-points
-  
+        .replace(/^\s*[\*\-]\s+/gm, '• ') // Replace '*' or '-' at the start of lines with '• '
+        .replace(/^\s{2,}•\s+/gm, '    • '); // Indent sub-points
+
     formattedText = formattedText.trim();
-  
+
     return formattedText;
-  }
+}
