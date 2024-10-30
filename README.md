@@ -7,25 +7,11 @@ This repository provides reusable functions for simple tasks such as JSON, text 
 
 # Using Calm 
 
-Calm may be used in two ways: 
-
-* Self-hosted in your account (Recommended).
-* As a hosted library via Distant Field Labs. 
-
-## Self-Hosted Instances 
-
-For security and reliability reasons, we always recommend  deploying and maintaining your own version of any third-party libraries in your Google Workspace account and Calm is no different. 
+For security and reliability reasons, we do not offer Calm as a hoted library. 
 
 To conduct your own deployment, either create a new [script project](https://developers.google.com/apps-script/guides/projects) within your account. 
 
 Once deployed, you can either copy and paste each of the files in Utils/ to your project or, leverage [clasp](https://developers.google.com/apps-script/guides/clasp) to deploy. 
-
-## Hosted Library
-
-If you are in a hurry, or in a position where you cannot host your own version of Calm, in the Library section of your project add the following Script ID: 
-
-`1fpRT-3azh7Dd-cX-XATuS0Puv2RVi4-AuIbN2mgtTlEboi49zgmT9_P-`
-
 
 
 # Functions List
