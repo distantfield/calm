@@ -7,7 +7,7 @@ This repository provides reusable functions for simple tasks such as JSON, text 
 
 # Using Calm 
 
-For security and reliability reasons, we do not offer Calm as a hoted library. 
+For security and reliability reasons, we do not offer Calm as a hosted library. 
 
 To conduct your own deployment, either create a new [script project](https://developers.google.com/apps-script/guides/projects) within your account. 
 
